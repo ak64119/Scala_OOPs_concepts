@@ -1,0 +1,23 @@
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+//Assignment_Q5
+// Implement the factorial function using to and reduceLeft, without
+// a loop or recursion
+
+
+class fact(){
+  def facto(n:Int) = n match {
+    case _ if n < 1 => 0
+    case _ => (1 to n).reduceLeft(_*_)
+  }
+}
+
+object calc_fact{
+  def main(Args: Array[String]){
+  var cal_value = new fact()
+  println("The factorial of 5 is: " + cal_value.facto(0))
+}
+}
+
+///////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
